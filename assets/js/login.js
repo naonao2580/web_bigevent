@@ -66,7 +66,6 @@ $(function() {
                     return layer.msg(res.message, { icon: 5 });
                 }
                 layer.msg(res.message, { icon: 6 });
-                // console.log(res.token);
 
                 // 将登录成功得到的token字符串保存到location
                 localStorage.setItem('token', res.token)
