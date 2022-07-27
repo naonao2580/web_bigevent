@@ -52,11 +52,15 @@ $(function() {
                 if (res.status != 0) {
                     return layer.msg('修改失败');
                 }
-                console.log(res);
+                // console.log(res);
                 layer.msg('修改成功');
+
+                console.log(window.parent);
 
                 // 调用父页面的方法，重新渲染
                 window.parent.getUserInfo()
+
+
 
             }
 
